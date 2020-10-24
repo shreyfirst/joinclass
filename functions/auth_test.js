@@ -1,3 +1,5 @@
+import fetch from "node-fetch";
+
 /* Import faunaDB sdk */
 const faunadb = require('faunadb')
 const getId = require('./utils/getId')
