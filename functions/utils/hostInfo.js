@@ -1,5 +1,6 @@
+const fetch = require("node-fetch")
+
 module.exports = function hostInfo(access_token) {
-  const fetch = require("node-fetch")
 
   let api_endpoint = 'https://api.zoom.us/v2/users/me'
   let payload = {  
