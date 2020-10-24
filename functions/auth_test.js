@@ -1,11 +1,10 @@
-import fetch from "node-fetch";
-// import faunadb from "faunadb";
-// import getId from "./utils/getId";
-// import hostInfo from "./utils/hostInfo";
 
+// const getId = require('./utils/getId')
+// const hostInfo = require('./utils/hostInfo')
 // const q = faunadb.query
 
 exports.handler = async (event, context) => {
+  const fetch = require("node-fetch")
 
   // const client = new faunadb.Client({
   //   secret: process.env.FAUNADB_SERVER_SECRET
@@ -56,4 +55,4 @@ exports.handler = async (event, context) => {
   //       body: JSON.stringify(error)
   //     }
   //   })
-};
+}
