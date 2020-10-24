@@ -22,7 +22,7 @@
 	"scripts": {
 		"start": "netlify dev",
 		"katamundi": "react-scripts start",
-		"build": "react-scripts build"
+		"build": "react-scripts build && echo '/* /index.html 200' | cat >build/_redirects"
 	},
 	"devDependencies": {
 		"netlify-cli": "^2.19.0"
