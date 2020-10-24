@@ -1,8 +1,8 @@
 /* Import faunaDB sdk */
 import fetch from "node-fetch";
-import faunadb from "faunadb";
-import getId from "./utils/getId";
-import hostInfo from "./utils/hostInfo";
+// import faunadb from "faunadb";
+// import getId from "./utils/getId";
+// import hostInfo from "./utils/hostInfo";
 
 // const q = faunadb.query
 
