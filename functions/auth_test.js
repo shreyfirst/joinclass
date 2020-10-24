@@ -33,7 +33,7 @@ exports.handler = async (event, context) => {
     return_value = resError;
    })
 
-  let data = return_value
+  let data = return_value.body
   // const data = hostInfo(authorization)
   const userId = data.id;
 
