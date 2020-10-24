@@ -5,7 +5,7 @@ const hostInfo = require('./utils/hostInfo')
 const q = faunadb.query
 const fetch = require("node-fetch")
 
-exports.handler = async (event, context) => {
+exports.handler = async function(event, context) {
 
   // const client = new faunadb.Client({
   //   secret: process.env.FAUNADB_SERVER_SECRET
