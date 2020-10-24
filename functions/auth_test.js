@@ -1,4 +1,3 @@
-/* Import faunaDB sdk */
 import fetch from "node-fetch";
 // import faunadb from "faunadb";
 // import getId from "./utils/getId";
