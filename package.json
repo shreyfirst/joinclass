@@ -1,36 +1,35 @@
 {
-  "name": "netlify-fauna",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@analytics/google-analytics": "^0.3.1",
-    "analytics": "^0.3.5",
-    "faunadb": "^2.13.1",
-    "markdown-magic": "^1.0.0",
-    "node-fetch": "^2.6.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.21.0",
-    "query-string": "^6.13.6",
-    "react-router-dom": "^5.2.0",
-    "web-vitals": "^0.2.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
-  "scripts": {
-    "start": "netlify dev",
-    "build": "react-scripts build"
-  },
-  "devDependencies": {
-    "netlify-cli": "^2.19.0"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "netlify-fauna",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@analytics/google-analytics": "^0.3.1",
+		"analytics": "^0.3.5",
+		"faunadb": "^2.13.1",
+		"markdown-magic": "^1.0.0",
+		"node-fetch": "^2.6.1",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"axios": "^0.21.0",
+		"query-string": "^6.13.6",
+		"react-router-dom": "^5.2.0",
+		"web-vitals": "^0.2.4",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-scripts": "3.4.1"
+	},
+	"scripts": {
+		"start": "netlify dev",
+		"build": "react-scripts build"
+	},
+	"devDependencies": {
+		"netlify-cli": "^2.19.0"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
 }
-
