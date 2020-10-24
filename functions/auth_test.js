@@ -25,10 +25,10 @@ exports.handler = async function(event, context) {
   let return_value;
 
   await fetch(api_endpoint, payload)  
-  .then(function(resSuccess) {
+  .then(async function(resSuccess) {
     return_value = resSuccess.json();
    })
-  .then(function(resError) {
+  .then(async function(resError) {
     return_value = resError;
    })
 
