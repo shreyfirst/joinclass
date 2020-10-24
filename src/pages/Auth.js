@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Component, useEffect }  from 'react';
 import queryString from "query-string";
 import axios from "axios";
 
