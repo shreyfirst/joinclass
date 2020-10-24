@@ -18,10 +18,10 @@ if (!process.env.FAUNADB_SERVER_SECRET) {
 
 // Has var. Do the thing
 if (process.env.FAUNADB_SERVER_SECRET) {
-  createFaunaDB(process.env.FAUNADB_SERVER_SECRET).then(() => {
-    console.log('Fauna Database schema has been created')
-    console.log('Claim your fauna database with "netlify addons:auth fauna"')
-  })
+  // createFaunaDB(process.env.FAUNADB_SERVER_SECRET).then(() => {
+  //   console.log('Fauna Database schema has been created')
+  //   console.log('Claim your fauna database with "netlify addons:auth fauna"')
+  // })
 }
 
 /* idempotent operation */
