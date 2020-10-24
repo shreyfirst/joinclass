@@ -11,6 +11,8 @@ exports.handler = async (event, context) => {
   // }) 
 
   const authorization = event.headers.authorization;
+  const access_token = authorization.replace('Bearer ', '')
+
   let api_endpoint = 'https://api.zoom.us/v2/users/me'
   let payload = {  
     method: 'POST',
