@@ -1,10 +1,9 @@
-import fetch from "node-fetch";
-
 /* Import faunaDB sdk */
 const faunadb = require('faunadb')
 const getId = require('./utils/getId')
 const hostInfo = require('./utils/hostInfo')
 const q = faunadb.query
+const fetch = require("node-fetch")
 
 exports.handler = (event, context) => {
 
