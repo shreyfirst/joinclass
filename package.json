@@ -20,8 +20,8 @@
 		"react-scripts": "4.0.0"
 	},
 	"scripts": {
-    "start": "netlify dev",
-    "katamundi": "react-scripts start",
+		"start": "netlify dev",
+		"katamundi": "react-scripts start",
 		"build": "react-scripts build"
 	},
 	"devDependencies": {
