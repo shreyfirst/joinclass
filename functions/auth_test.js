@@ -33,13 +33,13 @@ exports.handler = async (event, context) => {
     return_value = resError;
    })
 
-  let data = return_value.body
+  let data = return_value
   // const data = hostInfo(authorization)
-  const userId = data.id;
+  // const userId = data.id;
 
   return {
     statusCode: 200,
-    body: "d" + userId
+    body: "d" + JSON.stringify(data)
   }
 
   // console.log(`Function 'todo-read' invoked. Read id: ${id}`)
