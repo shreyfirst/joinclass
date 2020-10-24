@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div>
-      <Route path="/auth" component={Auth} />
+      <Route path="/auth" exact component={Auth} />
       <Route path="/" component={Home} />
     </div>
   );
