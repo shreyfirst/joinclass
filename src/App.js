@@ -1,6 +1,4 @@
 import logo from "./logo.svg";
-import React, { Component, useEffect }  from 'react';
-
 import "./App.css";
 import { Route } from "react-router-dom";
 import Auth from "./pages/Auth";

@@ -1,6 +1,5 @@
-import "../App.css";
 import React, { Component, useEffect }  from 'react';
-
+import "../App.css";
 
 function Home() {
   let clientId = "VWaT69z9TrarRZlBKtRGTg";
