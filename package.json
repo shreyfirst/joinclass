@@ -8,16 +8,23 @@
     "faunadb": "^2.13.1",
     "markdown-magic": "^1.0.0",
     "node-fetch": "^2.6.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "query-string": "^6.13.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "bootstrap": "netlify dev:exec node ./scripts/bootstrap-fauna-database.js",
-    "docs": "md-magic --path '**/*.md' --ignore 'node_modules'",
-    "start": "netlify dev",
-    "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
-    "build": "react-scripts build"
+    "docs": "md-magic --path '**/*.md' --ignore 'node_modules'",
+    "start": "netlify dev",
+    "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
+    "build": "react-scripts build"
   },
   "devDependencies": {
     "netlify-cli": "^2.19.0"
@@ -29,3 +36,4 @@
     "not op_mini all"
   ]
 }
+
