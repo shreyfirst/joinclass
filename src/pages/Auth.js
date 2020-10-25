@@ -6,7 +6,7 @@ export default function Auth() {
   useEffect(() => {
     const parsed = queryString.parse(window.location.search);
     console.log(parsed);
-    axios.post(`https://google.com`, parsed).then((res) => {
+    axios.post("%PUBLIC_URL%/.netlify/functions/tokenize", parsed).then((res) => {
       console.log(res);
     });
   }, []);
