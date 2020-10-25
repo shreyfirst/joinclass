@@ -4,7 +4,11 @@
 // const q = faunadb.query
 
 exports.handler = async (event, context) => {
+  
   const fetch = require("node-fetch")
+
+  const body = JSON.parse(event.body);
+  const code = body.code;
 
   // const client = new faunadb.Client({
   //   secret: process.env.FAUNADB_SERVER_SECRET
@@ -12,28 +16,29 @@ exports.handler = async (event, context) => {
 
   const authorization = event.headers.authorization;
   const access_token = authorization.replace('Bearer ', '')
+  const encodedAuth = btoa("VWaT69z9TrarRZlBKtRGTg:IFzc4TKbHX5A2z3ntfGC7Nra7u69u5B2");
 
-  let api_endpoint = 'https://api.zoom.us/v2/users/me'
+  let api_endpoint = "https://zoom.us/oauth/token" + $.param({
+    grant_type: "authorization_code", 
+    code: code,
+    redirect_uri: "https://joinclass.org/dashboard"
+  })
   let payload = {  
     method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + access_token,
-      'Host': 'api.zoom.us'
+    authentication: encodedAuth
     }
-  }
-  let return_value;
+  
+  let result;
 
   await fetch(api_endpoint, payload)  
   .then(async function(resSuccess) {
-    return_value = resSuccess.json();
+    result = resSuccess.json();
    })
   .then(async function(resError) {
-    return_value = resError;
+    result = resError;
    })
 
-  let data = return_value
+  let data = result
   // const data = hostInfo(authorization)
   // const userId = data.id;
 
