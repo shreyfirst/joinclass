@@ -16,11 +16,8 @@ exports.handler = async (event, context) => {
 
   const encodedAuth = Buffer.from("VWaT69z9TrarRZlBKtRGTg:IFzc4TKbHX5A2z3ntfGC7Nra7u69u5B2").toString('base64')
   
-  let api_endpoint = "https://zoom.us/oauth/token" + $.param({
-    grant_type: "authorization_code", 
-    code: code,
-    redirect_uri: "https://joinclass.org/dashboard"
-  })
+  let api_endpoint = "https://zoom.us/oauth/token?grant_type=authorization_code&code=" + code + "&redirect_uri=https://joinclass.org/dashboard"
+  
   let payload = {  
     method: 'POST',
     authentication: encodedAuth
