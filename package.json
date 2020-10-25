@@ -1,16 +1,8 @@
 {
-	"name": "netlify-fauna",
-	"version": "0.1.0",
+	"name": "joinclass_frontend",
+	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
-		"@analytics/google-analytics": "^0.3.1",
-		"analytics": "^0.3.5",
-		"faunadb": "^2.13.1",
-		"markdown-magic": "^1.0.0",
-		"node-fetch": "^2.6.1",
-		"@testing-library/jest-dom": "^5.11.4",
-		"@testing-library/react": "^11.1.0",
-		"@testing-library/user-event": "^12.1.10",
 		"axios": "^0.21.0",
 		"query-string": "^6.13.6",
 		"react-router-dom": "^5.2.0",
@@ -20,7 +12,7 @@
 		"react-scripts": "4.0.0"
 	},
 	"scripts": {
-		"start": "netlify dev --live",
+		"start": "netlify dev",
 		"katamundi": "react-scripts start",
 		"build": "react-scripts build && echo '/* /index.html 200' | cat >build/_redirects"
 	},
