@@ -14,8 +14,8 @@ exports.handler = async (event, context) => {
   //   secret: process.env.FAUNADB_SERVER_SECRET
   // }) 
 
-  const encodedAuth = btoa("VWaT69z9TrarRZlBKtRGTg:IFzc4TKbHX5A2z3ntfGC7Nra7u69u5B2");
-
+  const encodedAuth = Buffer.from("VWaT69z9TrarRZlBKtRGTg:IFzc4TKbHX5A2z3ntfGC7Nra7u69u5B2").toString('base64')
+  
   let api_endpoint = "https://zoom.us/oauth/token" + $.param({
     grant_type: "authorization_code", 
     code: code,
