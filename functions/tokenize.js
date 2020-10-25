@@ -27,13 +27,13 @@ exports.handler = async (event, context) => {
 
   await fetch(api_endpoint, payload)  
   .then(async function(resSuccess) {
-    result = resSuccess.json();
+    result = resSuccess;
    })
   .then(async function(resError) {
-    result = resError;
+    result = "error";
    })
 
-  let data = result
+  let data = result.body
   // const data = hostInfo(authorization)
   // const userId = data.id;
 
