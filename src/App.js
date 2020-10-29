@@ -3,6 +3,7 @@ import "./App.css";
 import { Route } from "react-router-dom";
 import Auth from "./pages/Auth";
 import Home from "./pages/Home";
+import React, { Component } from "react";
 
 function App() {
   return (
